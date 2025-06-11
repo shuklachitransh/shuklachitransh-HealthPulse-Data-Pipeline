@@ -12,7 +12,6 @@ This project simulates and processes real-time user health metrics using a scala
 - 🔁 **Real-Time Streaming**: Streams data into **Amazon Kinesis**.
 - 📦 **Storage**: Batches streamed data into newline-delimited JSON and stores in **Amazon S3**.
 - ❄️ **Data Warehousing**: Snowflake ingests and queries data via external staging and `COPY INTO`.
-- 📊 **Visualization**: Dashboards built in **Looker** to analyze user health trends.
 
 ---
 
@@ -22,8 +21,7 @@ This project simulates and processes real-time user health metrics using a scala
 |------------------|-----------------------------------|
 | Data Streaming   | AWS Kinesis                       |
 | Storage          | Amazon S3                         |
-| Processing       | Snowflake (External Stage + SQL)  |
-| Visualization    | Looker                            |
+| Processing       | Snowflake (External Stage + SQL)  |                               
 | Scripting        | Python (Boto3, JSON, Time)        |
 
 ---
@@ -38,5 +36,3 @@ This project simulates and processes real-time user health metrics using a scala
 │   └── push_from_kinesis_to_s3.py   # Reads from Kinesis and stores in S3
 ├── snowflake/
 │   └── snowflake_setup.sql          # Snowflake table, stage, file format, COPY INTO
-├── looker/
-│   └── dashboard_screenshot.png     # Looker dashboard preview
