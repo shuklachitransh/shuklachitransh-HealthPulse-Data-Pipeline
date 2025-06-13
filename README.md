@@ -24,15 +24,3 @@ This project simulates and processes real-time user health metrics using a scala
 | Processing       | Snowflake (External Stage + SQL)  |                               
 | Scripting        | Python (Boto3, JSON, Time)        |
 
----
-
-## 📂 Project Structure
-
-```bash
-.
-├── data_generator/
-│   └── stream_to_kinesis.py         # Simulates health data and streams to Kinesis
-├── aws_s3_loader/
-│   └── push_from_kinesis_to_s3.py   # Reads from Kinesis and stores in S3
-├── snowflake/
-│   └── snowflake_setup.sql          # Snowflake table, stage, file format, COPY INTO
